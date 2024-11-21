@@ -1,0 +1,84 @@
+@font-face {
+    font-family: art ;
+    src: url(../../../../public/assets/fonts/art.ttf);
+}
+@font-face {
+    font-family: bebas ;
+    src: url(../../../../public/assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: poppins ;
+    src: url(../../../../public/assets/fonts/Poppins-Medium.ttf);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color:#d8cfb8;
+    color: #fff;
+    padding-top: 20px;
+    transition: left 1s ease;
+    border-radius: 0px 20px 20px 0px; 
+    z-index: 1; 
+    
+    
+    
+    
+  }
+  
+  .sidebar.open {
+    left: 0; 
+  }
+  
+  .sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   text-align: center;
+
+   h1{
+    font-size: clamp(0.5rem,1rem,3rem);
+    color: #312b1c;
+    }
+
+  }
+  
+  .sidebar-list li {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .sidebar-list a {
+    color:white;
+    text-decoration: none;
+    display: block;
+    background-color: #312b1c;
+    border-radius: 6px;
+    font-size: clamp(0.5rem,1rem,3rem);
+    font-family: art;
+  }
+  
+  .sidebar-list a:hover {
+    background-color: #aa2934;
+  }
+  
+  .sidebar-toggle {
+    display: block !important;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #aa2934;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;  
+  }
+  

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:poppins ;
+    src: url("../../../../public/assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family:bebbas ;
+    src: url("../../../../public/assets/fonts/BebasNeue-Regular.ttf");
+}
+
+
+
+
+.comp-prod{
+    background-color:#c4bca8;
+    border-radius: 8px;
+    height: 20vh;
+    width: 100%;
+    max-width: 70vw;
+    font-family: bebbas;
+    
+
+
+
+    .container-prod{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        margin-top: 12px;
+        
+        align-items: center;
+        height: 20vh;
+
+        
+
+        .image{
+            width: 100%;
+            max-width: 30vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 30px;
+
+            img{
+                width: 100%;
+                max-width: 8vw;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+
+
+        
+    }
+}

@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+@font-face {
+    font-family: art ;
+    src: url(../../../../public/assets/fonts/art.ttf);
+}
+@font-face {
+    font-family: bebas ;
+    src: url(../../../../public/assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: poppins ;
+    src: url(../../../../public/assets/fonts/Poppins-Medium.ttf);
+}
+
+.page-login{
+    background-color: #FBF3DF;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .container-image-texto{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: art;
+        max-width: 40vw;
+
+
+
+        h1{
+            color: #312b1c;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            max-width: 30vw;
+            font-size: clamp(0.5rem,1.5rem,3rem);
+            line-height: 30px;
+        }
+    }
+
+    .barra{
+        height: 40vw;
+        width: 0.2vw;
+        background-color: #312b1c;
+    }
+
+    .container-login{
+      background-color: #d8cfb8;
+        border-radius: 20px;
+
+
+        width: 100%;
+        max-width: 40vw;
+        height: 60vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap:10vh;
+        .logo{
+            width: 100%;
+            max-width: 37vw;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            gap: 12vw;
+            
+            h1{
+                font-size: clamp(0.5rem,2rem,3rem);
+                font-family: art;
+                letter-spacing: 6px;
+            }
+            img{
+                width: 100%;
+                max-width: 4vw;
+                height: 9vh;
+                border-radius: 20vw;
+                margin-left: 0 auto;
+            }
+        }
+        
+
+        .conteudo{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .forms{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 5vh;
+                font-family: bebas;
+             
+    
+    
+                .inputs{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    max-width: 25vw;
+                  
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: start;
+                    
+                    
+                   
+                    label{
+                        text-align: start;
+                        font-size: clamp(0.5rem,1.1rem,3rem);
+                    }
+                    
+                    input{
+                        width: 100%;
+                        height: 5vh;
+    
+                        text-align: center;
+    
+                        border: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+    
+            .entrar-criar{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: poppins;
+                button{
+                    width: 6vw;
+                    height: 6vh;
+
+                    background-color: #F7717C;
+                    border: none;
+                    border-radius: 10px;
+                    font-family: poppins;
+                }
+                button:hover{
+                    background-color: #bb565e;
+                    cursor: pointer;
+                }
+    
+                h1{
+                    font-size: clamp(0.5rem,0.9rem,3rem);
+                    margin-left: 25vw;
+                }
+                h1:hover{
+                    color: #F7717C;
+                    cursor: pointer;
+                }
+            }
+        }
+       
+    }
+}

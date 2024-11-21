@@ -1,0 +1,16 @@
+<button class="sidebar-toggle" (click)="toggleSidebar()">☰</button>
+
+<div class="sidebar" [class.open]="isSidebarOpen">
+  <ul class="sidebar-list">
+    <h1>Produtos</h1>
+    <li><a href="#">Cadastrar Produto</a></li>
+    <li><a href="#">Alterar Produto</a></li>
+    <li><a href="#">Deletar Produto</a></li>
+  </ul>
+  <ul class="sidebar-list">
+    <h1>Clientes</h1>
+    <li><a href="#">Cadastrar Cliente</a></li>
+    <li><a href="#">Alterar Cliente</a></li>
+    <li><a href="#">Deletar Cliente</a></li>
+  </ul>
+</div>

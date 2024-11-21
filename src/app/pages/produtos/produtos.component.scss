@@ -1,0 +1,58 @@
+.container-produtos::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px; 
+}
+
+
+.container-produtos::-webkit-scrollbar-thumb {
+    background: #2A2A2A; 
+    border-radius: 10px; 
+}
+
+
+.container-produtos::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+
+.container-produtos::-webkit-scrollbar-thumb:hover {
+    background: #2A2A2A; 
+}
+
+.page-produtos {
+    background-color: #FBF3DF;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-produtos {
+    width: 100%;
+    max-width: 80vw;
+    height: 70vh;
+    background-color: #d8cfb8;
+    border-radius: 20px;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px;
+}
+
+.container-produtos app-produto {
+    width: 100%;
+    max-width: 70vw; 
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #c4bca8;
+    border-radius: 8px;
+    height: auto;
+    padding: 10px; 
+}

@@ -1,0 +1,32 @@
+<div class="page-login">
+    
+    <div class="container-image-texto">
+        <h1>Faça login para acessar sua área exclusiva, onde você pode gerenciar seus produtos de artesanato, atualizar informações
+            e acompanhar o interesse dos clientes. Simplifique sua gestão e conecte suas criações ao público!</h1>
+        <img src="./assets/images/login/ferramentas.png" alt="">
+    </div>
+    <div class="barra"></div>
+    <div class="container-login">
+        <div class="logo">
+            <img src="./assets/images/login/logo.png" alt="">
+            <h1>Login</h1>
+        </div>
+        <div class="conteudo">
+            <form class="forms" action="">
+                <div class="inputs">    
+                    <label for="">E-mail</label>
+                    <input type="text" id="email" placeholder="Digite seu E-mail" [(ngModel)]="email" name="senha">
+                </div>
+                <div class="inputs">    
+                    <label for="">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua Senha" [(ngModel)]="senha" name="senha">
+                </div>
+            </form>
+            <div class="entrar-criar">
+                <button (click)="navegarProdutos()">Entrar</button>
+                <h1 (click)="mudaTela()">Crie Sua Conta</h1>
+            </div>
+        </div>
+        
+    </div>
+</div>

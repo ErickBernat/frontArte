@@ -1,0 +1,58 @@
+<div class="page-cadastro">
+    <div class="container-image-texto">
+        <h1>Cadastre-se agora e comece a explorar todas as funcionalidades da nossa plataforma! Gerencie seus produtos de artesanato, atualize suas informações facilmente e acompanhe o interesse dos clientes em tempo real.
+            Torne a gestão do seu negócio mais prática e conecte suas criações a um público ainda maior!</h1>
+        <img src="./assets/images/cadastro/artesao.png" alt="">
+    </div>
+    <div class="barra"></div>
+    <div class="container-cadastro">
+        <div class="logo">
+            <img src="./assets/images/login/logo.png" alt="">
+            <h1>Cadastro</h1>
+        </div>
+        <div class="conteudo">
+            <form class="forms" action="">
+                <div class="inputs">    
+                    <label for="">Nome</label>
+                    <input id="nome" type="text" placeholder="Digite seu Nome" [(ngModel)]="artesao.nome" name="nome">
+                </div>
+                <div class="inputs">    
+                    <label for="">E-mail</label>
+                    <input id="E-mail" type="text" placeholder="Digite seu E-mail" [(ngModel)]="artesao.email" name="email">
+                </div>
+                <div class="inputs">    
+                    <label for="">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua Senha" [(ngModel)]="artesao.senha" name="senha">
+                </div>
+                <div class="inputs">    
+                    <label for="">Telefone</label>
+                    <input id="telefone" type="text" placeholder="Digite seu Telefone" [(ngModel)]="artesao.telefone" name="telefone">
+                </div>
+                <div class="inputs">    
+                    <label for="">Cep</label>
+                    <input id="cep" type="text" placeholder="Digite seu Cep" [(ngModel)]="artesao.cep" name="cep">
+                </div>
+                <div class="inputs">    
+                    <label for="">Logradouro</label>
+                    <input  id="logradouro" type="text" placeholder="Digite seu logradouro" [(ngModel)]="artesao.logradouro" name="logradouro">
+                </div>
+                <div class="inputs">    
+                    <label for="">Numero</label>
+                    <input  id="numero" type="number" placeholder="Digite Nº Residencia" [(ngModel)]="artesao.numero" name="numero">
+                </div>
+                <div class="inputs">    
+                    <label for="">Complemento</label>
+                    <input  id="complemento" type="text" placeholder="Digite o complemento" [(ngModel)]="artesao.complemento" name="complemento">
+                </div>
+                <div class="inputs">    
+                    <label for="">Bairro</label>
+                    <input  id="bairro" type="text" placeholder="Digite seu Bairro" [(ngModel)]="artesao.bairro" name="bairro">
+                </div>
+            </form>
+            <div class="entrar-criar">
+                <button (click)="cadastraArtesao()">Cadastrar</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
