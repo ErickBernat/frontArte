@@ -1,23 +1,24 @@
 import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Produto } from '../../../entities/produto';
-import { ProdutoService } from '../../../service/produto.service';
+import { Cliente } from '../../../entities/cliente';
+import { ClienteService } from '../../../service/cliente.service';
+
 
 @Component({
-  selector: 'app-produtos',
+  selector: 'app-clientes',
   standalone: false,
   
-  templateUrl: './produtos.component.html',
-  styleUrl: './produtos.component.scss'
+  templateUrl: './clientes.component.html',
+  styleUrl: './clientes.component.scss'
 })
-export class ProdutosComponent implements OnInit {
+export class ClientesComponent {
 
-  list: Produto[] = []; 
-  filteredItems: Produto[] = []; 
+  list: Cliente[] = []; 
+  filteredItems: Cliente[] = []; 
   searchText: string = '';
   openModal: boolean =false;
 
-  constructor(private service: ProdutoService,private router: Router) {}
+  constructor(private service: ClienteService,private router: Router) {}
 
 
   filterItems(): void {
@@ -55,6 +56,5 @@ export class ProdutosComponent implements OnInit {
   navegarHome(){
     this.router.navigate(['/home']);
   }
-
 
 }

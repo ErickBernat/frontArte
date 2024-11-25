@@ -19,26 +19,39 @@
 
 
 
-.componente-prod{
+.componente-cliente{
     background-color:#f1f1f1;
     border-radius: 8px;
-    height: 300px;
-    
-    width: 230px ;
+    height: 100px;
+    width: 100% ;
+    max-width: 80vw;
     margin: 20px;
     font-family: bebbas;
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
 
 
-    .container-prod{
+    .container-cliente{
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top: 12px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
         align-items: center;
-        height: 20vh;
+        height: 100px;
         cursor: pointer;
+
+        .informacoes{
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+            justify-content: center;
+            gap: 200px;
+        }
 
         .botoes{
             display: flex;
@@ -76,7 +89,8 @@
 
         .arte{
             display: flex;
-            width: 95%;
+            flex-direction: row;
+            width: 10%;
             align-items: center;
             justify-content: space-between;
 
@@ -102,8 +116,7 @@
 
         .imagem{
             width: 100%;
-            max-width: 8vw;
-            border-radius: 10px;
+            max-width: 5vw;
             height: auto;
             
         }

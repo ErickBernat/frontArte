@@ -1,9 +1,23 @@
-<div class="comp-prod">
+<div class="componente-prod" (click)="AtivaModal()">
     <div class="container-prod">
-        <div class="image">
-            <img src="./assets/images/produtos/jarro.png" alt="">
-            <h1>Jarro</h1>
-        </div>
-        <h1>R$ 200.00</h1>
+      <div class="arte" >
+        <img class="logo" src="./assets/images/login/logo.png" alt="Logo" />
+        <img class="lixo" (click)="deletaProduto($event)" src="./assets/images/produtos/lixo2.png" alt="Lixeira" />
+      </div>
+      <img class="imagem" src="{{url}}" alt="Prato" />
+      <h1>{{nome}}</h1>
+      <h2>R$ {{valor}}.00</h2>
     </div>
-</div>
+  </div>
+  
+  <app-modal-item
+    *ngIf="openModal"
+    [isOpen]="openModal"
+    [closeModal]="FechaModal"
+    [idI]="id"
+    [urlI]="url"
+    [valorI]="valor"
+    [nomeI]="nome || 'Nome não disponível'"
+    (produtoAlt)="alterar()">
+  </app-modal-item>
+  

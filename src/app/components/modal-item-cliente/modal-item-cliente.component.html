@@ -1,0 +1,21 @@
+<div *ngIf="isOpen" class="modal-artesao" (click)="handleBackgroundClick($event)">
+    <div class="container-artesao">
+      <div class="titulo">
+        <h1>Altere seu Produto</h1>
+      </div>
+        <img class="imagem" src="./assets/images/produtos/perfil.png" alt="Prato" />
+      <form>
+        <div class="texto">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" [(ngModel)]="cliente.nome" name="nome"  placeholder="Digite o nome"/>
+            </div>
+            
+            <div class="texto">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" [(ngModel)]="cliente.telefone" (input)="formatarTelefoneInput($event)" name="valor" placeholder="Digite o telefone" />
+        </div>
+      </form>
+      <button (click)="alteraFecha()">Alterar</button>
+    </div>
+  </div>
+  

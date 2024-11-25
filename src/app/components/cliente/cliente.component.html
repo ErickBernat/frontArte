@@ -1,0 +1,25 @@
+<div class="componente-cliente" (click)="AtivaModal()">
+    <div class="container-cliente">
+        <div class="informacoes">
+            <img class="imagem" src="./assets/images/produtos/perfil.png" />
+            <h1>{{nome}}</h1>
+            <h2>{{telefone}}</h2>
+        </div>
+     
+      <div class="arte" >
+        <img class="lixo" (click)="deletaCliente($event)" src="./assets/images/produtos/lixo2.png" alt="Lixeira" />
+        <img class="logo" src="./assets/images/login/logo.png" alt="Logo" />
+    </div>
+    </div>
+  </div>
+  <app-modal-item-cliente
+    *ngIf="openModal"
+    [isOpen]="openModal"
+    [closeModal]="FechaModal"
+    [idI]="id"
+    [nomeI]="nome"
+    [telefoneI]="telefone"
+    (produtoAlt)="alterar()">
+  </app-modal-item-cliente>
+
+  

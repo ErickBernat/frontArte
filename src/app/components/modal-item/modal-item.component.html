@@ -1,0 +1,26 @@
+<div *ngIf="isOpen" class="modal-artesao" (click)="handleBackgroundClick($event)">
+    <div class="container-artesao">
+      <div class="titulo">
+        <h1>Altere seu Produto</h1>
+      </div>
+        <img class="imagem" src="{{produto.url}}" />
+      <form>
+        <div class="texto">
+            <label for="url">url</label>
+            <input type="text" id="url"  [(ngModel)]="produto.url" name="url" placeholder="Digite a nova url"/>
+        </div>
+        
+        <div class="texto">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" [(ngModel)]="produto.nome" name="nome"  placeholder="Digite o novo nome"/>
+        </div>
+        
+        <div class="texto">
+        <label for="preco">Preço</label>
+        <input type="number" id="preco" [(ngModel)]="valor" name="valor" placeholder="Digite o novo preço" />
+    </div>
+      </form>
+      <button (click)="alteraFecha()">Alterar</button>
+    </div>
+  </div>
+  

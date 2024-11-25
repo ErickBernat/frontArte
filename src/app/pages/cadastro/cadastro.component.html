@@ -1,8 +1,8 @@
 <div class="page-cadastro">
     <div class="container-image-texto">
-        <h1>Cadastre-se agora e comece a explorar todas as funcionalidades da nossa plataforma! Gerencie seus produtos de artesanato, atualize suas informações facilmente e acompanhe o interesse dos clientes em tempo real.
-            Torne a gestão do seu negócio mais prática e conecte suas criações a um público ainda maior!</h1>
-        <img src="./assets/images/cadastro/artesao.png" alt="">
+        <h1><span>Cadastre-se agora</span> e comece a explorar todas as funcionalidades da nossa plataforma! <span>Gerencie seus produtos</span> de artesanato, <span>atualize suas informações</span> facilmente e acompanhe o interesse dos clientes em tempo real.
+            Torne a gestão do seu negócio mais prática e <span>conecte suas criações</span> a um público ainda maior!</h1>
+        <img src="./assets/images/cadastro/artesao.webp" alt="">
     </div>
     <div class="barra"></div>
     <div class="container-cadastro">
@@ -26,7 +26,7 @@
                 </div>
                 <div class="inputs">    
                     <label for="">Telefone</label>
-                    <input id="telefone" type="text" placeholder="Digite seu Telefone" [(ngModel)]="artesao.telefone" name="telefone">
+                    <input id="telefone" type="text" placeholder="Digite seu Telefone" [(ngModel)]="artesao.telefone" (input)="formatarTelefoneInput($event)" name="telefone">
                 </div>
                 <div class="inputs">    
                     <label for="">Cep</label>

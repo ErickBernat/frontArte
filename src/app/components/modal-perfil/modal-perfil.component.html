@@ -1,0 +1,52 @@
+<div *ngIf="isOpen" class="modal-perfil" (click)="handleBackgroundClick($event)">
+    <div class="container-perfil">
+      <div class="titulo">
+        <h1>{{artesao.nome}}</h1>
+      </div>
+        <img class="imagem" src="./assets/images/produtos/perfil.png" alt="Prato" />
+        <form class="forms" action="">
+            <div class="inputs">    
+                <label for="">Nome</label>
+                <input id="nome" type="text" placeholder="{{artesao.nome}}" [(ngModel)]="artesaoI.nome" name="nome">
+            </div>
+            <div class="inputs">    
+                <label for="">E-mail</label>
+                <input id="E-mail" type="text" placeholder="{{artesao.email}}" [(ngModel)]="artesaoI.email" name="email">
+            </div>
+            <div class="inputs">    
+                <label for="">Senha</label>
+                <input type="text" id="senha" placeholder="{{artesao.senha}}" [(ngModel)]="artesaoI.senha" name="senha">
+            </div>
+            <div class="inputs">    
+                <label for="">Telefone</label>
+                <input id="telefone" type="text" placeholder="{{artesao.telefone}}" [(ngModel)]="artesaoI.telefone" name="telefone">
+            </div>
+            <div class="inputs">    
+                <label for="">Cep</label>
+                <input id="cep" type="text" placeholder="{{artesao.cep}}" [(ngModel)]="artesaoI.cep" name="cep">
+            </div>
+            <div class="inputs">    
+                <label for="">Logradouro</label>
+                <input  id="logradouro" type="text" placeholder="{{artesao.logradouro}}"  [(ngModel)]="artesaoI.logradouro" name="logradouro">
+            </div>
+            <div class="inputs">    
+                <label for="">Numero</label>
+                <input  id="numero" type="number" placeholder="{{artesao.numero}}" [(ngModel)]="artesaoI.numero" name="numero">
+            </div>
+            <div class="inputs">    
+                <label for="">Complemento</label>
+                <input  id="complemento" type="text" placeholder="{{artesao.complemento}}" [(ngModel)]="artesaoI.complemento" name="complemento">
+            </div>
+            <div class="inputs">    
+                <label for="">Bairro</label>
+                <input  id="bairro" type="text" placeholder="{{artesao.bairro}}" [(ngModel)]="artesaoI.bairro" name="bairro">
+            </div>
+            <div class="botoes">
+                <button (click)="alteraFecha()">Alterar</button>
+                <button (click)="logoff()">Sair</button>
+            </div>
+        </form>
+        
+    </div>
+  </div>
+  

@@ -10,29 +10,29 @@
     font-family: poppins ;
     src: url(../../../../public/assets/fonts/Poppins-Medium.ttf);
 }
-.container-produtos::-webkit-scrollbar {
+.container-clientes::-webkit-scrollbar {
     width: 10px; 
     height: 10px; 
 }
 
 
-.container-produtos::-webkit-scrollbar-thumb {
+.container-clientes::-webkit-scrollbar-thumb {
     background: #2A2A2A; 
     border-radius: 10px; 
 }
 
 
-.container-produtos::-webkit-scrollbar-track {
+.container-clientes::-webkit-scrollbar-track {
     background: #f1f1f1; 
     border-radius: 10px;
 }
 
 
-.container-produtos::-webkit-scrollbar-thumb:hover {
+.container-clientes::-webkit-scrollbar-thumb:hover {
     background: #2A2A2A; 
 }
 
-.page-produtos {
+.page-clientes {
     background-color: #FBF3DF;
     height: 100vh;
     display: flex;
@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-image: url('../../../../public/assets/images/produtos/red.webp');
+    background-image: url('../../../../public/assets/images/produtos/Splash-PNG-Image.png');
 
 
     h1{
@@ -49,19 +49,21 @@
     }
 
 
-.container-produtos {
+.container-clientes {
     width: 100%;
     max-width: 85vw;
     height: 70vh;
-    background-color: #2e2e2e;;
+    background-color: #2e2e2e;
     border-radius: 20px;
 
 
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+   
+  
+    gap: 5px;
     overflow-y: auto;
+
 
 }
 

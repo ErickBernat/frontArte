@@ -11,6 +11,13 @@ import { FormsModule } from '@angular/forms';
 import { ProdutosComponent } from './pages/produtos/produtos.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ProdutoComponent } from './components/produto/produto.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { ModalItemComponent } from './components/modal-item/modal-item.component';
+import { ClientesComponent } from './pages/clientes/clientes.component';
+import { ModalPerfilComponent } from './components/modal-perfil/modal-perfil.component';
+import { ClienteComponent } from './components/cliente/cliente.component';
+import { ModalClienteComponent } from './components/modal-cliente/modal-cliente.component';
+import { ModalItemClienteComponent } from './components/modal-item-cliente/modal-item-cliente.component';
 
 
 
@@ -22,7 +29,14 @@ import { ProdutoComponent } from './components/produto/produto.component';
     CadastroComponent,
     ProdutosComponent,
     SidebarComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    ModalComponent,
+    ModalItemComponent,
+    ClientesComponent,
+    ModalPerfilComponent,
+    ClienteComponent,
+    ModalClienteComponent,
+    ModalItemClienteComponent
   ],
   imports: [
     CommonModule,

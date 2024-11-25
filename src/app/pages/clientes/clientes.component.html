@@ -1,32 +1,31 @@
-<div class="page-produtos">
+<div class="page-clientes">
     <app-sidebar></app-sidebar>
-    <h1>Produtos</h1>
+    <h1>Clientes</h1>
     <div class="input">
         <input
          type="text" 
-         placeholder="Pesquise pelo nome do produto" 
+         placeholder="Pesquise pelo nome do cliente" 
          name="" 
          id=""
          [(ngModel)]="searchText" 
         (ngModelChange)="filterItems()" >
         <button (click)="AtivaModal()">Add</button>
-        <app-modal
+        <app-modal-cliente
             *ngIf="openModal"
             [isOpen]="openModal"
             [closeModal]="FechaModal"
-            (produtoCadastrado)="onProdutoCadastrado()">
-        </app-modal>
+            (clienteCadastrado)="onProdutoCadastrado()">
+        </app-modal-cliente>
     </div>
-    <div class="container-produtos">
+    <div class="container-clientes">
         <div  *ngFor="let item of filteredItems">
-            <app-produto
+            <app-cliente
             [id]="+item.id"
             [nome]="item.nome || '' "
-            [url]="item.url || '' "
-            [valor]="+item.valor"
+            [telefone]="item.telefone || '' "
             (produtoDeletado)="onProdutoCadastrado()"
             (produtoAlterado)="onProdutoCadastrado()">
-        </app-produto>
+        </app-cliente>
         </div>    
     </div>
 </div>

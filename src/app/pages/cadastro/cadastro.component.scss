@@ -61,6 +61,12 @@
         font-family: art;
         max-width: 40vw;
 
+        img{
+            width: 100%;
+            max-width: 30vw;
+            height: auto;
+        }
+
 
 
         h1{
@@ -68,9 +74,15 @@
             text-align: center;
             align-items: center;
             width: 100%;
-            max-width: 30vw;
-            font-size: clamp(0.5rem,1.5rem,3rem);
+            max-width: 40vw;
+            font-size: clamp(0.5rem,1.2rem,3rem);
+            font-family: poppins;
             line-height: 30px;
+
+            span{
+                font-size: clamp(0.5rem,1.4rem,3rem);
+                color: #aa2934;
+            }
         }
     }
 
@@ -180,6 +192,7 @@
                     height: 6vh;
 
                     background-color: #aa2934;
+                    color: white;
                     border: none;
                     border-radius: 10px;
                     font-family: poppins;

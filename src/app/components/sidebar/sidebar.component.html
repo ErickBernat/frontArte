@@ -1,16 +1,28 @@
-<button class="sidebar-toggle" (click)="toggleSidebar()">☰</button>
 
 <div class="sidebar" [class.open]="isSidebarOpen">
-  <ul class="sidebar-list">
-    <h1>Produtos</h1>
-    <li><a href="#">Cadastrar Produto</a></li>
-    <li><a href="#">Alterar Produto</a></li>
-    <li><a href="#">Deletar Produto</a></li>
+  <div class="sidebar-toggle">
+    <button (click)="toggleSidebar()">
+      <span class="icon-arrow" [ngClass]="{'down': !isSidebarOpen, 'up': isSidebarOpen}"></span>
+    </button>
+  </div>
+  <ul class="sidebar-list"[class.open]="isSidebarOpen">
+    <li><a href="/produtos">Produtos</a></li>
   </ul>
   <ul class="sidebar-list">
-    <h1>Clientes</h1>
-    <li><a href="#">Cadastrar Cliente</a></li>
-    <li><a href="#">Alterar Cliente</a></li>
-    <li><a href="#">Deletar Cliente</a></li>
+    <li><a href="/clientes">Clientes</a></li>
+
   </ul>
+  <div class="perfil" (click)="AtivaModal()">
+    <h1>Olá, {{artesao.nome}}</h1>
+    <img src="./assets/images/produtos/perfil.png" alt="">
+  </div>
+  <app-modal-perfil
+            *ngIf="openModal"
+            [isOpen]="openModal"
+            [closeModal]="FechaModal"
+            [artesao]="artesao"
+            (usuarioAlt)="ngOnInit()"
+  
+  ></app-modal-perfil>
 </div>
+

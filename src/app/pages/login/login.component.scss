@@ -46,9 +46,15 @@
             text-align: center;
             align-items: center;
             width: 100%;
-            max-width: 30vw;
-            font-size: clamp(0.5rem,1.5rem,3rem);
+            max-width: 40vw;
+            font-size: clamp(0.5rem,1.3rem,3rem);
             line-height: 30px;
+            font-family: poppins;
+
+            span{
+                font-size: clamp(0.5rem,1.4rem,3rem);
+                color: #aa2934;
+            }
         }
     }
 
@@ -155,7 +161,8 @@
                     width: 6vw;
                     height: 6vh;
 
-                    background-color: #F7717C;
+                    background-color: #aa2934;
+                    color: white;
                     border: none;
                     border-radius: 10px;
                     font-family: poppins;
@@ -170,7 +177,7 @@
                     margin-left: 25vw;
                 }
                 h1:hover{
-                    color: #F7717C;
+                    color: #aa2934;
                     cursor: pointer;
                 }
             }
